@@ -53,11 +53,11 @@
 		viewer.setDescription(``);
 		viewer.loadSettingsFromURL();
 		
-		viewer.loadGUI(() => {
-			viewer.setLanguage('en');
-			$("#menu_tools").next().show();
-			//viewer.toggleSidebar();
-		});
+		//viewer.loadGUI(() => {
+		//	viewer.setLanguage('en');
+		//	$("#menu_tools").next().show();
+		//	//viewer.toggleSidebar();
+		//});
 		
 		Potree.loadPointCloud("pointclouds/fieldx1x41/cloud.js", "fieldx1x41", e => {
 			let pointcloud = e.pointcloud;
