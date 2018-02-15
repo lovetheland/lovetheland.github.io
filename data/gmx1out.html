@@ -54,13 +54,7 @@
 		viewer.setBackground("black"); // ["skybox", "gradient", "black", "white"];
 		viewer.setDescription(``);
 		viewer.loadSettingsFromURL();
-		
-		viewer.loadGUI(() => {
-			viewer.setLanguage('en');
-			viewer.setClipMode(Potree.ClipMode.CLIP_OUTSIDE)
-			$("#menu_tools").next().show();
-			//viewer.toggleSidebar();
-		});
+		viewer.setClipMode(Potree.ClipMode.CLIP_OUTSIDE)
 		
 		Potree.loadPointCloud("pointclouds/gmx1out/cloud.js", "gmx1out", e => {
 			let pointcloud = e.pointcloud;
