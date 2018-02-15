@@ -49,7 +49,7 @@
 		viewer.setPointBudget(1*1000*1000);
 		document.title = "";
 		viewer.setEDLEnabled(false);
-		viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
+		viewer.setBackground("white"); // ["skybox", "gradient", "black", "white"];
 		viewer.setDescription(``);
 		viewer.loadSettingsFromURL();
 		
@@ -66,7 +66,7 @@
 			material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX 
 			material.size = 1;
 			material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
-			material.shape = Potree.PointShape.SQUARE;
+			material.shape = Potree.PointShape.Circle;
 			viewer.fitToScreen();
 		});
 		
