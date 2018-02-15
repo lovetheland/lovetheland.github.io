@@ -45,16 +45,19 @@
 		window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
 		
 		viewer.setEDLEnabled(true);
-		viewer.setFOV(60);
-		viewer.setPointBudget(1*1000*1000);
+		viewer.edlRadius = 1;
+		viewer.edlStrength = .1;
+		viewer.setFOV(30);
+		viewer.setPointBudget(4*1000*1000);
 		document.title = "";
-		viewer.setEDLEnabled(false);
-		viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
+		//viewer.setEDLEnabled(false);
+		viewer.setBackground("black"); // ["skybox", "gradient", "black", "white"];
 		viewer.setDescription(``);
 		viewer.loadSettingsFromURL();
 		
 		viewer.loadGUI(() => {
 			viewer.setLanguage('en');
+			viewer.setClipMode(Potree.ClipMode.CLIP_OUTSIDE)
 			$("#menu_tools").next().show();
 			//viewer.toggleSidebar();
 		});
@@ -66,8 +69,21 @@
 			material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX 
 			material.size = 1;
 			material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
-			material.shape = Potree.PointShape.SQUARE;
+			material.shape = Potree.PointShape.CIRCLE;
 			viewer.fitToScreen();
+
+			viewer.scene.view.position.set(18.87, -14.78, 25.75);
+			viewer.scene.view.lookAt(new THREE.Vector3(2.09, 2.00, 2.02));
+
+			{ // VOLUME visible
+				let volume  = new Potree.Volume();
+				volume.scale.set(40, 40, 5.9);
+				volume.position.set(0, 0, 0);
+				volume.clip = true;
+				volume.visible = false;
+				
+				viewer.scene.addVolume(volume);
+			}
 		});
 		
 	</script>
