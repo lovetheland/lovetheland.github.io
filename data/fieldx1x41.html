@@ -49,15 +49,11 @@
 		viewer.setPointBudget(1*1000*1000);
 		document.title = "";
 		viewer.setEDLEnabled(false);
-		viewer.setBackground("gradient"); // ["skybox", "gradient", "black", "white"];
+		viewer.setBackground("black"); // ["skybox", "gradient", "black", "white"];
 		viewer.setDescription(``);
 		viewer.loadSettingsFromURL();
+		viewer.setClipMode(Potree.ClipMode.CLIP_OUTSIDE)
 		
-		//viewer.loadGUI(() => {
-		//	viewer.setLanguage('en');
-		//	$("#menu_tools").next().show();
-		//	//viewer.toggleSidebar();
-		//});
 		
 		Potree.loadPointCloud("pointclouds/fieldx1x41/cloud.js", "fieldx1x41", e => {
 			let pointcloud = e.pointcloud;
@@ -66,9 +62,22 @@
 			material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX 
 			material.size = 1;
 			material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
-			material.shape = Potree.PointShape.SQUARE;
+			material.shape = Potree.PointShape.CIRCLE;
 			viewer.fitToScreen();
+
+			viewer.scene.view.position.set(-37.42, 26.85, -0.31);
+			viewer.scene.view.lookAt(new THREE.Vector3(-36.21, 23.26, -0.11));
 		});
+
+		{ // VOLUME visible
+			let volume  = new Potree.Volume();
+			volume.scale.set(15, 15, 20);
+			volume.position.set(-37, 23, 0);
+			volume.clip = true;
+			volume.visible = false;
+			
+			viewer.scene.addVolume(volume);
+		}
 		
 	</script>
 	
