@@ -1,24 +1,259 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
+  	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114310518-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	  gtag('config', 'UA-114310518-1');
+	</script>
 
-<style>
-h1 { margin-top: 4%; font-size: 30pt; font-weight: 100; font-family: 'PT Mono', monospace; text-align: center; line-height: 12pt;
-}
-pre { font-size: 12pt; font-family: 'PT Mono', monospace; line-height: 2pt; text-align: center;
-}
-body {
-    background-image: url("background/bkgd1.jpg"); background-size: 100%; background-repeat: no-repeat;
-}
-</style>
-</head>
-<body>
+  	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+	<style>
+	body {
+		font-size: 12pt;
+		font-family: 'PT Mono',monospace;
+		line-height: 18pt;
+		text-align: left;
+	   	width: 410px;
+	   	margin: 0 auto;
+	   	z-index: 10;}
+	body span { background-color: white; }
+	p {
+		font-size: 12pt;
+		font-family: 'PT Mono',monospace;
+		line-height: 18pt;
+		text-align: left;
+	   	width: 410px;
+	   	margin: 0 auto;}
+	p span { background-color: white; }
+	h1 {margin-top: 10%; font-size: 47pt; font-weight: 100; font-family: 'PT Mono', monospace; text-align: center; line-height: 18pt;}
+	h1 span { background-color: white;}
+	pre {font-size: 12pt; font-family: 'PT Mono', monospace; line-height: 18pt; text-align: center;}
+	pre span { background-color: white; }
+	</style>
 
-<h1>SCANLINE IO</h1>
-<pre>info [at] scanline [dot] io</pre>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>SCANLINE IO</title>
+	<link rel="stylesheet" type="text/css" href="libs/potree/potree.css">
+	<link rel="stylesheet" type="text/css" href="libs/jquery-ui/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/perfect-scrollbar/css/perfect-scrollbar.css">
+	<link rel="stylesheet" href="libs/openlayers3/ol.css" type="text/css">
+	<link rel="stylesheet" href="libs/spectrum/spectrum.css" type="text/css">
+  </head>
 
-</body>
+  <body>
+	<script src="libs/jquery/jquery-3.1.1.js"></script>
+	<script src="libs/spectrum/spectrum.js"></script>
+	<script src="libs/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+	<script src="libs/jquery-ui/jquery-ui.min.js"></script>
+	<script src="libs/three.js/build/three.js"></script>
+	<script src="libs/other/stats.min.js"></script>
+	<script src="libs/other/BinaryHeap.js"></script>
+	<script src="libs/tween/tween.min.js"></script>
+	<script src="libs/d3/d3.js"></script>
+	<script src="libs/proj4/proj4.js"></script>
+	<script src="libs/openlayers3/ol.js"></script>
+    <script src="libs/i18next/i18next.js"></script>
+	<script src="libs/potree/potree.js"></script>
+	<script src="libs/plasio/js/laslaz.js"></script>
+	<script src="libs/plasio/vendor/bluebird.js"></script>
+
+    <div class="potree_container" style="position: absolute; width: 100%; height: 100%; left: 0px; top: 0px; z-index: -1;">
+		<div id="potree_render_area"></div>
+    </div>
+	
+	<script>
+
+		// random scan
+
+		ScanPath = "pointclouds/gmx1out/cloud.js"
+		ScanName = "gmx1out";
+		ScanBack = "black";
+		ViewFOV = 30;
+		ViewPos = new THREE.Vector3(18.87, -14.78, 25.75)
+		ViewVect = new THREE.Vector3(2.09, 2.00, 2.02)
+
+		var ind = Math.round((Math.random() * 3) + .5);
+
+		if(ind == 1){
+			ScanPath = "pointclouds/gmx1out/cloud.js"
+			ScanName = "gmx1out";
+			ScanBack = "black";
+			ViewFOV = 30;
+
+			ViewPos = new THREE.Vector3(18.87, -14.78, 25.75)
+			ViewVect = new THREE.Vector3(2.09, 3.00, 2.02)
+		}
+
+		if(ind == 2){
+			ScanPath = "pointclouds/1000f/cloud.js"
+			ScanName = "1000f";
+			ScanBack = "white";
+			ViewFOV = 60;
+
+			ViewPos = new THREE.Vector3(5.59, 4.11, 1.19)
+			ViewVect = new THREE.Vector3(-1.54, 6.45, 1.18)
+		}
+		if(ind == 3){
+			ScanPath = "pointclouds/fieldx1x41/cloud.js"
+			ScanName = "fieldx1x41";
+			ScanBack = "black";
+			ViewFOV = 60;
+
+			ViewPos = new THREE.Vector3(-37.42, 26.85, -0.31)
+			ViewVect = new THREE.Vector3(-36.21, 23.26, -0.11)
+		}
+
+		//
+	
+		window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
+		viewer.setEDLEnabled(true);
+		viewer.edlRadius = 1;
+		viewer.edlStrength = .1;
+		viewer.setFOV(ViewFOV);
+		viewer.setPointBudget(1*1000*1000);
+		document.title = "";
+		//viewer.setEDLEnabled(false);
+		viewer.setBackground(ScanBack); // ["skybox", "gradient", "black", "white"];
+		viewer.setDescription(``);
+		viewer.loadSettingsFromURL();
+		viewer.setClipMode(Potree.ClipMode.CLIP_OUTSIDE);
+		
+		Potree.loadPointCloud(ScanPath, ScanName, e => {
+			let pointcloud = e.pointcloud;
+			let material = pointcloud.material;
+			viewer.scene.addPointCloud(pointcloud);
+			material.pointColorType = Potree.PointColorType.RGB; // any Potree.PointColorType.XXXX 
+			material.size = 1;
+			material.pointSizeType = Potree.PointSizeType.ADAPTIVE;
+			material.shape = Potree.PointShape.CIRCLE;
+			viewer.fitToScreen();
+
+			//
+
+			viewer.scene.view.position.set(ViewPos.x, ViewPos.y, ViewPos.z);
+			viewer.scene.view.lookAt(ViewVect);
+
+			//
+
+		});
+
+		var clock = new THREE.Clock();
+		var moving = false;
+
+		function move() {
+
+			// gmx1out path
+			if(ind == 1){
+
+				if(moving == false){
+
+					requestAnimationFrame(move);
+					var t = clock.getElapsedTime();
+
+					viewer.scene.view.position.x = viewer.scene.view.position.x + .01 * Math.sin(t/10);
+					viewer.scene.view.position.y = viewer.scene.view.position.y + .02 * Math.sin(t/10);
+					viewer.scene.view.position.z = viewer.scene.view.position.z - .002 * Math.sin(t/20);
+					viewer.scene.view.lookAt(ViewVect)
+
+					document.getElementById("potree_render_area").onmousedown = movemouse;
+				}
+				if(moving == true){
+					requestAnimationFrame(move);
+				}
+			}
+
+			// 1000f path
+			if(ind == 2){
+
+				if(moving == false){
+
+					requestAnimationFrame(move);
+					var t = clock.getElapsedTime();
+
+					viewer.scene.view.position.x = viewer.scene.view.position.x - .01 * Math.sin(t/10);
+					viewer.scene.view.position.y = viewer.scene.view.position.y +.001 * Math.sin(t/10);
+					viewer.scene.view.yaw = viewer.scene.view.yaw + .003 * Math.sin(t/20);
+
+					document.getElementById("potree_render_area").onmousedown = movemouse;
+				}
+				if(moving == true){
+					requestAnimationFrame(move);
+				}
+			}
+			// fieldx1x41 path
+			if(ind == 3){
+
+				if(moving == false){
+
+					requestAnimationFrame(move);
+					var t = clock.getElapsedTime();
+
+					viewer.scene.view.position.x = viewer.scene.view.position.x + .002 * Math.sin(t/3);
+					viewer.scene.view.position.y = viewer.scene.view.position.y + .002 * Math.sin(t/3);
+					viewer.scene.view.position.z = viewer.scene.view.position.z + .001 * Math.sin(t/10);
+					viewer.scene.view.lookAt(ViewVect)
+
+					document.getElementById("potree_render_area").onmousedown = movemouse;
+				}
+				if(moving == true){
+					requestAnimationFrame(move);
+				}
+			}
+		}
+
+		(function (mouseStopDelay) {
+		    var timeout;
+		    document.addEventListener('mousemove', function (e) {
+		        clearTimeout(timeout);
+		        timeout = setTimeout(function () {
+		            var event = new CustomEvent("mousestop", {
+		                detail: {
+		                    clientX: e.clientX,
+		                    clientY: e.clientY
+		                },
+		                bubbles: true,
+		                cancelable: true
+		            });
+		            e.target.dispatchEvent(event);
+		        }, mouseStopDelay);
+		    });
+		}(1));
+
+		// Example use
+		document.getElementById("potree_render_area").addEventListener('mousestop', function(e) {
+		   moving = false;
+		});
+
+		function movemouse() {
+		   moving = true;
+		   document.getElementById("potree_render_area").onmousedown = movemouse;	   
+		}
+
+		move();
+
+	</script>
+	
+	<h1><span>SCANLINE IO</span></h1>
+
+	<p><span>3d Scanning | Modeling | Data Processing<br><br/>
+	</span></p>
+
+	<p><span>Scanline IO provides 3d scanning services and develops software solutions for architectural design projects. We use novel modeling workflows to document existing conditions and develop software tools to better integrate spatial data into the design process.
+	<br><br/>
+	We work with point cloud data in research and practice to mobilize the depth, speed, and accuracy of the 3d scan in a flexible design modeling environment. 
+	<br><br/>
+	tel: 917.719.0801
+	<p><span>
+	email: <a href='mailto:info@scanline.io' style='color: black;'>info@scanline.io</a></span></p>
+	</span></p>
+
+	</body>
 </html>
-
