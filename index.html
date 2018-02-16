@@ -41,7 +41,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=.5">
+	<meta name="viewport" content="width=1000, initial-scale=1.0">
     <title>SCANLINE IO</title>
 	<link rel="stylesheet" type="text/css" href="data/libs/potree/potree.css">
 	<link rel="stylesheet" type="text/css" href="data/libs/jquery-ui/jquery-ui.min.css">
@@ -81,6 +81,7 @@
 		ViewFOV = 30;
 		ViewPos = new THREE.Vector3(18.87, -14.78, 25.75)
 		ViewVect = new THREE.Vector3(2.09, 2.00, 2.02)
+		edlvar = true
 
 		var ind = Math.round((Math.random() * 3) + .5);
 
@@ -92,6 +93,7 @@
 
 			ViewPos = new THREE.Vector3(18.87, -14.78, 25.75)
 			ViewVect = new THREE.Vector3(2.09, 3.00, 2.02)
+			edlvar = true
 		}
 
 		if(ind == 2){
@@ -102,6 +104,7 @@
 
 			ViewPos = new THREE.Vector3(5.59, 4.11, 1.19)
 			ViewVect = new THREE.Vector3(-1.54, 6.45, 1.18)
+			edlvar = false
 		}
 		if(ind == 3){
 			ScanPath = "data/pointclouds/fieldx1x41/cloud.js"
@@ -111,12 +114,13 @@
 
 			ViewPos = new THREE.Vector3(-37.42, 26.85, -0.31)
 			ViewVect = new THREE.Vector3(-36.21, 23.26, -0.11)
+			edlvar = false
 		}
 
 		//
 	
 		window.viewer = new Potree.Viewer(document.getElementById("potree_render_area"));
-		viewer.setEDLEnabled(true);
+		viewer.setEDLEnabled(edlvar);
 		viewer.edlRadius = 1;
 		viewer.edlStrength = .1;
 		viewer.setFOV(ViewFOV);
