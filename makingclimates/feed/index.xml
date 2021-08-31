@@ -10,7 +10,7 @@
 <channel>
 	<title>Making Climates</title>
 	<atom:link href="http://localhost/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<link>./../index.html</link>
 	<description></description>
 	<lastBuildDate>Tue, 31 Aug 2021 23:38:44 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -21,22 +21,22 @@
 	<generator>https://wordpress.org/?v=5.8</generator>
 
 <image>
-	<url>/wp-content/uploads/2021/08/cropped-test-32x32.jpg</url>
+	<url>./../wp-content/uploads/2021/08/cropped-test-32x32.jpg</url>
 	<title>Making Climates</title>
-	<link>/</link>
+	<link>./../index.html</link>
 	<width>32</width>
 	<height>32</height>
 </image> 
 	<item>
 		<title>Newsletter #2: Bay Area</title>
-		<link>/2021/08/28/second-meeting/</link>
+		<link>./../2021/08/28/second-meeting/index.html</link>
 		
 		<dc:creator><![CDATA[Making Climates]]></dc:creator>
 		<pubDate>Sat, 28 Aug 2021 23:11:26 +0000</pubDate>
 				<category><![CDATA[Newsletter]]></category>
-		<guid isPermaLink="false">/?p=292</guid>
+		<guid isPermaLink="false">./../index.html?p=292</guid>
 
-					<description><![CDATA[On July 9th, we held the second “moveable feast” in our research conversation series, gathering in Berkeley’s Faculty Club for an afternoon of peach pizzas and cross-campus exchange. The meeting featured Morgan Ames, Stephen Collier, and James Holston from UC Berkeley, Albert Narath from UC Santa Cruz, and Simon Sadler from UC Davis, in addition&#8230; <a class="more-link" href="/2021/08/28/second-meeting/">Continue reading <span class="screen-reader-text">Newsletter #2: Bay Area</span></a>]]></description>
+					<description><![CDATA[On July 9th, we held the second “moveable feast” in our research conversation series, gathering in Berkeley’s Faculty Club for an afternoon of peach pizzas and cross-campus exchange. The meeting featured Morgan Ames, Stephen Collier, and James Holston from UC Berkeley, Albert Narath from UC Santa Cruz, and Simon Sadler from UC Davis, in addition&#8230; <a class="more-link" href="./../2021/08/28/second-meeting/index.html">Continue reading <span class="screen-reader-text">Newsletter #2: Bay Area</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p>On July 9<sup>th</sup>, we held the second “moveable feast” in our research conversation series, gathering in Berkeley’s Faculty Club for an afternoon of peach pizzas and cross-campus exchange. The meeting featured Morgan Ames, Stephen Collier, and James Holston from UC Berkeley, Albert Narath from UC Santa Cruz, and Simon Sadler from UC Davis, in addition to the organizers. Participants shared previous and ongoing research, and with the wider goals of the Making Climates project in mind, identified a number of promising threads that have since occupied our thinking.</p>
 
@@ -62,15 +62,15 @@
 			</item>
 		<item>
 		<title>Newsletter #1: Welcome to Making Climates</title>
-		<link>/2021/08/25/hello-world/</link>
-					<comments>/2021/08/25/hello-world/#comments</comments>
+		<link>./../2021/08/25/hello-world/index.html</link>
+					<comments>./../2021/08/25/hello-world/index.html#comments</comments>
 		
 		<dc:creator><![CDATA[Making Climates]]></dc:creator>
 		<pubDate>Wed, 25 Aug 2021 17:50:25 +0000</pubDate>
 				<category><![CDATA[Newsletter]]></category>
-		<guid isPermaLink="false">/?p=1</guid>
+		<guid isPermaLink="false">./../index.html?p=1</guid>
 
-					<description><![CDATA[As changing climates transform cities and regions, images of endless crisis erode any lingering semblance of stability, not only of our physical environment but of our capacity to make sense of what once appeared to be anomalous phenomena. Straining knowledge practices historically premised on the construction of stable, certain terms, confronting these upheavals requires new&#8230; <a class="more-link" href="/2021/08/25/hello-world/">Continue reading <span class="screen-reader-text">Newsletter #1: Welcome to Making Climates</span></a>]]></description>
+					<description><![CDATA[As changing climates transform cities and regions, images of endless crisis erode any lingering semblance of stability, not only of our physical environment but of our capacity to make sense of what once appeared to be anomalous phenomena. Straining knowledge practices historically premised on the construction of stable, certain terms, confronting these upheavals requires new&#8230; <a class="more-link" href="./../2021/08/25/hello-world/index.html">Continue reading <span class="screen-reader-text">Newsletter #1: Welcome to Making Climates</span></a>]]></description>
 										<content:encoded><![CDATA[
 <p class="is-style-default">As changing climates transform cities and regions, images of endless crisis erode any lingering semblance of stability, not only of our physical environment but of our capacity to make sense of what once appeared to be anomalous phenomena. Straining knowledge practices historically premised on the construction of stable, certain terms, confronting these upheavals requires new forms of understanding, invested in logics of transformation rather than fixity. Every response to climate change, accordingly, represents not only a strategy for addressing its urgent material consequences, but articulates broad epistemic transformations taking place within the disciplines and professions that produce the built environment. Whether in the ecological sciences, practices of design and construction, or the logics of infrastructure and planning, the material consequences of an extractive economy are accompanied by new demands for knowledge production rooted in global environmental concern.&nbsp;<em>Making Climates&nbsp;</em>aims to interrogate these encounters, asking how “climate” is itself reconstituted and how an aggregate of professionals, governing institutions, and public sensibilities is deployed in the work of making climate change real.</p>
 
@@ -99,7 +99,7 @@
 <p>Looking forward to building upon the territories explored in our first conversation, three more meetings will be scheduled over the coming months. This newsletter will send out regular updates regarding our conversation series, and in between will forward introductions, comments, questions, references, and anything our group may want to share. This can be done by replying to makingclimates@substack.com or by leaving a comment on the browser page (which requires logging in, since the list and its contents are private). After our series concludes in the Fall, the newsletter will be the home base of our “network,” facilitating ongoing projects in whatever form they might take.</p>
 ]]></content:encoded>
 					
-					<wfw:commentRss>/2021/08/25/hello-world/feed/</wfw:commentRss>
+					<wfw:commentRss>./../2021/08/25/hello-world/feed/index.html</wfw:commentRss>
 			<slash:comments>1</slash:comments>
 		
 		
