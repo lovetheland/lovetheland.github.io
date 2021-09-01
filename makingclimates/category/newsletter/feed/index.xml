@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Newsletter &#8211; Making Climates</title>
+	<atom:link href="http://localhost/category/newsletter/feed/" rel="self" type="application/rss+xml" />
+	<link>/makingclimates/</link>
+	<description></description>
+	<lastBuildDate>Tue, 31 Aug 2021 23:38:44 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8</generator>
+
+<image>
+	<url>/makingclimates/wp-content/uploads/2021/08/cropped-test-32x32.jpg</url>
+	<title>Newsletter &#8211; Making Climates</title>
+	<link>/makingclimates/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Newsletter #2: Bay Area</title>
+		<link>/makingclimates/2021/08/28/second-meeting/</link>
+		
+		<dc:creator><![CDATA[Making Climates]]></dc:creator>
+		<pubDate>Sat, 28 Aug 2021 23:11:26 +0000</pubDate>
+				<category><![CDATA[Newsletter]]></category>
+		<guid isPermaLink="false">/makingclimates/?p=292</guid>
+
+					<description><![CDATA[On July 9th, we held the second “moveable feast” in our research conversation series, gathering in Berkeley’s Faculty Club for an afternoon of peach pizzas and cross-campus exchange. The meeting featured Morgan Ames, Stephen Collier, and James Holston from UC Berkeley, Albert Narath from UC Santa Cruz, and Simon Sadler from UC Davis, in addition&#8230; <a class="more-link" href="/makingclimates/2021/08/28/second-meeting/">Continue reading <span class="screen-reader-text">Newsletter #2: Bay Area</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p>On July 9<sup>th</sup>, we held the second “moveable feast” in our research conversation series, gathering in Berkeley’s Faculty Club for an afternoon of peach pizzas and cross-campus exchange. The meeting featured Morgan Ames, Stephen Collier, and James Holston from UC Berkeley, Albert Narath from UC Santa Cruz, and Simon Sadler from UC Davis, in addition to the organizers. Participants shared previous and ongoing research, and with the wider goals of the Making Climates project in mind, identified a number of promising threads that have since occupied our thinking.</p>
+
+
+
+<p>If our first session proceeded from a focus on the production of climate knowledge—both by experts and by scholars working to make sense of how expertise came together—the second asked how this knowledge was being put to work. It mapped out moments, especially in spaces between participants’ areas of research, where the social and technical manifestations of climate shaped notions of environment, people’s relations with it, and furnished (or foreclosed) specific capacities to act. From scales from the immediately personal to the globally dispersed, and through sites from municipal governments to the design studio, the session explored the how and where new climates might be made.</p>
+
+
+
+<p>A technological mediation of environment—in the form of administrative methods as well as modes of computing—placed the “how” and the “where” in a close relation. The work presented by Morgan Ames and James Holston provided two entry points to this, considering their correlated effects upon the practices and structures of democracy. They departed from anthropologies of technology to frame localized methods of reproducing the bonds of community in a continuum with the hegemonic reach of Silicon Valley tech culture. For James, it presented a matter of participation—a project moving towards direct democracy in the face of increasing bureaucratic constriction. In such a space of practice, democracy materialized in the social ties of a community, uncovering a capacity to build infrastructures unavailable to an abstracted politics of representation. Investigating this question through projects such as “DengueChat”—a platform built upon dense relationships within communities to track and share information about disease vectors—the social and environmental were brought together in a democratic practice decoupled from state governance. Morgan expanded upon the gulf between social organization and political institutions that such cases exposed, charting parallels with the dissemination of computing technologies. Centered on the formation of childhood subjectivities, she described two projects: an account of the One Laptop per Child initiative and ongoing fieldwork in contemporary tech-based primary education. In their received wisdom, especially through ubiquitous reference to phenomena like the “democratization” of computing, these projects raised questions of who could have access, what forms of power they reproduced, and how their resulting politics were rendered apparent in the environment—with technology assuming a determinative role in shaping what social participation looked like. For both Morgan and James, these effects played out at a social register below where liberal democracies locate a public sphere of debate and action. The civic scale in particular, James noted, offered forms of direct democratic practice that had been effaced in modernizing shifts towards the nation-state as a basic site of polity.</p>
+
+
+
+<p>Returning to one of our project’s earliest concerns, this view raised an issue of geographic delineation—the presumed integrity of the sovereign state compromised under the stresses of rising sea levels, climate migration, etc. Consequently, the city becomes attuned to the demands of climate politics, assuming a unique influence over the relations between citizens and their environment. In a line of research that asked, “what comes after the modernist city?” Stephen Collier noted that despite this potential, city governments hold very little real power to effect the changes most significant to climate response. Outlining the stakes of environment within a history of modernist planning professions, Stephen described degrees of state control ceded to neoliberal governance and a postindustrial fragmentation of expertise. Paralleled with interest in public works and how we might reinterpret mid-century shifts in infrastructure relative to contemporary climate concerns, the conversation likewise attended to the subject of design. Simon Sadler examined the implications of understanding design as a vehicle for change, specifying how critical questions were often left unanswered—change “from what to what?” He described the complex grounds of environmental discourse that design occupied in the second half of the 20<sup>th</sup>century—from Fuller to Gregory Bateson—as central to the formation of a service-oriented design education, as well as what this might mean in confronting a changing climate. Bringing the conversation about design back to the material contexts of technology, Albert Narath presented histories of adobe and modernist industrial design, exploring how a seemingly anodyne construction method became a touchstone for 1970s debates about understanding and controlling energy costs. From public research and materials science to the infrastructures of design work, standardization, and governance, the objects found in Albert’s research brought together earlier environmental crises and the patterns of response we have aimed to map onto our immediate climates. Adobe, ambivalently reappearing in this discussion as both a material and a software, encapsulated the environmental circuit that brought us back and forth between information and matter.</p>
+
+
+
+<p>Overall, our meeting crystallized two additional themes to collectively chart: the politics of representation and the agency of design professionals. Looking ahead, we hope to build upon these and find new outlets for the thinking facilitated by Making Climates. Though the rising COVID-19 caseload has forced us to delay the third and fourth meetings (planned for UC Santa Barbara and UC San Diego) we have made alternate plans to keep the network active. This includes launching a website that we aim to use as a platform for the future collaboration and informal publication, as well as a renewed momentum to build the research network. Accordingly, we ask that participants please share this newsletter and bring in colleagues, grad students, and anyone else you feel might want to take part (the easiest way is to cc people in a reply to&nbsp;<a href="mailto:makingclimates@substack.com">makingclimates@substack.com</a>).</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Newsletter #1: Welcome to Making Climates</title>
+		<link>/makingclimates/2021/08/25/hello-world/</link>
+					<comments>/makingclimates/2021/08/25/hello-world/#comments</comments>
+		
+		<dc:creator><![CDATA[Making Climates]]></dc:creator>
+		<pubDate>Wed, 25 Aug 2021 17:50:25 +0000</pubDate>
+				<category><![CDATA[Newsletter]]></category>
+		<guid isPermaLink="false">/makingclimates/?p=1</guid>
+
+					<description><![CDATA[As changing climates transform cities and regions, images of endless crisis erode any lingering semblance of stability, not only of our physical environment but of our capacity to make sense of what once appeared to be anomalous phenomena. Straining knowledge practices historically premised on the construction of stable, certain terms, confronting these upheavals requires new&#8230; <a class="more-link" href="/makingclimates/2021/08/25/hello-world/">Continue reading <span class="screen-reader-text">Newsletter #1: Welcome to Making Climates</span></a>]]></description>
+										<content:encoded><![CDATA[
+<p class="is-style-default">As changing climates transform cities and regions, images of endless crisis erode any lingering semblance of stability, not only of our physical environment but of our capacity to make sense of what once appeared to be anomalous phenomena. Straining knowledge practices historically premised on the construction of stable, certain terms, confronting these upheavals requires new forms of understanding, invested in logics of transformation rather than fixity. Every response to climate change, accordingly, represents not only a strategy for addressing its urgent material consequences, but articulates broad epistemic transformations taking place within the disciplines and professions that produce the built environment. Whether in the ecological sciences, practices of design and construction, or the logics of infrastructure and planning, the material consequences of an extractive economy are accompanied by new demands for knowledge production rooted in global environmental concern.&nbsp;<em>Making Climates&nbsp;</em>aims to interrogate these encounters, asking how “climate” is itself reconstituted and how an aggregate of professionals, governing institutions, and public sensibilities is deployed in the work of making climate change real.</p>
+
+
+
+<p>Organized by UCLA professors Christopher Kelty and Michael Osman with PhD student Shota Vashakmadze, this project intends to develop new areas of scholarship by building a network of researchers dealing broadly with shared issues of climate, cities, and technology. Drawing from diverse fields—including anthropology, STS, the history of science, and the history of architecture—it hopes to map out a common ground for studying the myriad forces shaping our new climates.</p>
+
+
+
+<p>We are currently in the early stages of the project, building the network by holding a series of small, in-person conversations over the summer of 2021. Unable to safely host a conference and exhausted from a year of collaboration solely over zoom, we decided to travel from campus to campus in a “moveable feast,” paying visits to researchers across the University of California. Our first session was held on June 8th at UCLA and featured Jessica Cattelino, Liz Koslov, and Bharat Venkat, respectively discussing their work on sovereignty and water politics in the Everglades, a “retreat” from rising sea levels in New York, and an anthropology of extreme heat in the city.</p>
+
+
+
+<p>A lively conversation over breakfast took us through and beyond a set of issues we’d put together as a preface (link to narrative) for the conversation. In talking through our work, we found continuities where our subjects came together in historical, cultural, and technical encounters, but which reframed deep questions when viewed across our projects overall. Chief among these was a shared problematization of geography against the forms of spatial organization put forth by changing environments. The city and metropolitan region, often invoked as stable entities when discussing the political formations most directly reacting to climate catastrophe, quickly became complex sites defined by uncertain relations between societies, polities, and landscapes. How these mapped onto built areas, jurisdictions, and watersheds diverged according to the experiences and compositions of inhabitants, presenting unique localized responses to the ostensibly unifying force of climate.</p>
+
+
+
+<p>Reorienting questions of space and context, the role of experience in the production of climate knowledge formed another interface between our individual projects. Simultaneously integral to and effaced in the most visible representations of climate, the bodily experiences of comfort, vulnerability, and displacement provided a groundwork for rationalities of decision making, at the scale of the individual as well as their organization in collective response. Bharat characterized these technologies as a “disembodied&#8221; experience of heat that displaced its registration from the body to external, quantitative modes of sensing. Between experiences scaled to the body and its surroundings (both environmental and technical), the divergent understandings of what change implied required a deliberate effort of reconciliation. “Sharing truths,” to use Jessica’s phrase, entailed new methods of communicating and representing knowledge of the environment.</p>
+
+
+
+<p>Our capacity to stake out positions as researchers was complicated in this regard, inflected by what were alternately termed an “epistemological vertigo” and an “epistemological vortex” of climate discourse. On one hand, it impressed an experience of vertiginous doubt, pushed and pulled by individually convincing, yet incommensurate, truths encountered in the many isolated sites of making climates. On the other hand, however, a coherent alternative entailed an equally uncomfortable certainty, a reductive space that understood climate as a progressive ground of unstated ethical consensus. In situating our own work relative to the ethics of mitigation, the question of how climate is constituted was transposed to a question of how climate politics were developed and construed, and what exactly the political ramifications of a given response to crisis might be. In reviewing hegemonic formations of sustainability, adaptation, and resilience, consonances to wider effects neoliberal governance—like the “managed decline” of state authority paralleled in Liz’s research—embedded approaches climate&nbsp;in their wider social context.</p>
+
+
+
+<p>Looking forward to building upon the territories explored in our first conversation, three more meetings will be scheduled over the coming months. This newsletter will send out regular updates regarding our conversation series, and in between will forward introductions, comments, questions, references, and anything our group may want to share. This can be done by replying to makingclimates@substack.com or by leaving a comment on the browser page (which requires logging in, since the list and its contents are private). After our series concludes in the Fall, the newsletter will be the home base of our “network,” facilitating ongoing projects in whatever form they might take.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>/makingclimates/2021/08/25/hello-world/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
